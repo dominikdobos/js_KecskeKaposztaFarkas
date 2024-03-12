@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+  <head>
+    <title>Dobos Dominik</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="kecske.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1 id="h1">Kecske-káposzta-farkas-csónak</h1>
+        <p>
+          A tutajosnak át kell szállítani a folyó egyik partjáról a másikra egy
+          káposztát, egy kecskét és egy farkast. Ügyelni kell arra, hogy a
+          csónakban csak egyiküknek van hely (a révész evez) és ha a farkas
+          egyedül marad a kecskével, akkor a kecskéből ebéd lesz, illetve ha a
+          kecske egyedül marad a káposztával, akkor annak is lőttek!
+        </p>
+      </header>
+      <aside id="bal">
+        <h2>Bal part</h2>
+        <p>
+          <img
+            src="kepek/kecske2.png"
+            alt="kecske"
+            class="balkepek"
+            id="kecske"
+          />
+          <img
+            src="kepek/kaposzta.png"
+            alt="kaposzta"
+            class="balkepek"
+            id="kaposzta"
+          />
+          <img
+            src="kepek/farkas.png"
+            alt="farkas"
+            class="balkepek"
+            id="farkas"
+          />
+        </p>
+      </aside>
+      <article>
+        <button>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="40"
+            height="40"
+            fill="currentColor"
+            class="bi bi-arrow-left-circle-fill nyil bal"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z"
+            />
+          </svg>
+        </button>
+        <div id="csonak">
+          <div class="bal_div jelenlegi"></div>
+          <div class="jobb_div"></div>
+        </div>
+        <button>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="40"
+            height="40"
+            fill="currentColor"
+            class="bi bi-arrow-right-circle-fill nyil jobb"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"
+            />
+          </svg>
+        </button>
+      </article>
+      <aside id="jobb">
+        <h2>Jobb part</h2>
+        <p>
+          <img
+            src="kepek/kecske2.png"
+            alt="kecske"
+            class="jobbkepek eltunik"
+            id="kecske"
+          />
+          <img
+            src="kepek/kaposzta.png"
+            alt="kaposzta"
+            class="jobbkepek eltunik"
+            id="kaposzta"
+          />
+          <img
+            src="kepek/farkas.png"
+            alt="farkas"
+            class="jobbkepek eltunik"
+            id="farkas"
+          />
+        </p>
+      </aside>
+      <footer>
+        <p>Készítő neve</p>
+        <form>
+          <label>Ennyit ér a dolgozatom</label>
+          <input type="number" id="jegy" min="0" max="15" />
+          <input type="button" value="OK" id="OK" />
+        </form>
+      </footer>
+    </main>
+    <script src="kecske.js" type="module"></script>
+  </body>
+</html>

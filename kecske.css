@@ -1,0 +1,84 @@
+img {
+  width: 100px;
+}
+main,
+header,
+aside,
+footer,
+article {
+  border: 1px solid lightgray;
+  padding: 10px;
+}
+main {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-areas:
+    "h   h   h"
+    "asb ar asj"
+    "f   f  f";
+  grid-gap: 10px;
+}
+
+.eltunik {
+  display: none;
+}
+
+#csonak {
+  background-color: rgb(91, 170, 255);
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.bal_div {
+  background-image: url("./kepek/csonak.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+}
+
+.csonak_kep {
+  width: 300px;
+}
+
+header {
+  grid-area: h;
+}
+#bal {
+  grid-area: asb;
+}
+#jobb {
+  grid-area: asj;
+}
+article {
+  grid-area: ar;
+  display: flex;
+  height: 300px;
+}
+
+article img {
+  align-self: center;
+  display: block;
+  margin: auto;
+}
+
+article button {
+  width: 10%;
+  background-color: rgb(91, 170, 255);
+  border: none;
+}
+
+.nyil:hover {
+  fill: white;
+  cursor: pointer;
+}
+
+footer {
+  grid-area: f;
+}
+
+.kiemel {
+  border: 2px solid red;
+  cursor: grab;
+}
